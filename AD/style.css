@@ -1,0 +1,464 @@
+/* General Styles */
+html, body {
+    height: 100%; /* Ensure full height for body */
+    margin: 0; /* Remove default margin */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 5px;
+    background-color: #f8f8f8; /* Adjust as needed */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.circular-logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%; /* Makes the logo circular */
+    object-fit: cover; /* Ensures the image is contained within the circle */
+    border: 2px solid white; /* Optional: Add a border to the circle */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Font style */
+    background-color: #001F3F; /* Dark background color */
+    color: #001F3F; /* White text color */
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
+}
+
+header {
+    background-color: #3A6D8C; /* Header background color */
+    color: white; /* Header text color */
+    padding: 5px 20px; /* Reduced padding inside the header */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Center items vertically */
+    height: 70px; /* Set a fixed height for the header */
+}
+
+.circular-logo {
+    width: 50px; /* Adjust logo size to fit */
+    height: 50px;
+    border-radius: 30%;
+    object-fit: cover;
+    border: 2px solid black; /* Optional: white border for contrast */
+}
+
+nav ul li {
+    margin-left: 15px; /* Slightly reduce spacing between nav items */
+}
+
+nav ul li a {
+    font-size: 16px; /* Adjust font size for a more compact design */
+}
+
+nav ul li {
+    display: inline; /* Inline display for navigation items */
+    margin: 0 15px; /* Margin between links */
+}
+
+nav ul li a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+main {
+    flex: 1; /* Allow main to take available space */
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.welcome-section {
+    text-align: center; /* Center text */
+    padding: 100px; /* Increased padding for the welcome section */
+    background-color: #6A9AB0; /* Light blue background */
+    color: #3A6D8C; /* Dark text color */
+    border-radius: 10px; /* Rounded corners */
+    margin: 50px auto; /* Space around welcome section */
+    max-width: 800px; /* Max width of the welcome section */
+}
+
+.welcome-section h2 {
+    font-size: 4rem; /* Increased size of the welcome heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.welcome-section p {
+    font-size: 1.5rem; /* Adjust font size for the quote */
+    margin: 10px 0; /* Space above and below the quote */
+}
+
+#welcomeBtn {
+    background-color: #3A6D8C; /* Button background color */
+    color: white; /* Button text color */
+    padding: 15px 30px; /* Increased button padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.2rem; /* Adjust font size of the button */
+}
+
+footer {
+    background-color: #3A6D8C; /* Footer background color */
+    color: #fff; /* Footer text color */
+    text-align: center; /* Center footer text */
+    padding: 20px; /* Padding inside the footer */
+    width: 100%; /* Full width */
+}
+
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001F3F;
+    color: #ffffea; /* Changed to ensure text is visible on dark background */
+}
+
+header {
+    background-color: #3A6D8C;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffea;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    width: 200px;
+    background-color: #3A6D8C;
+    padding: 20px;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+#categories-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#categories-list li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #6A9AB0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#categories-list li:hover {
+    background-color: #3A6D8C;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 tools per row */
+    gap: 20px;
+}
+
+.tool-card {
+    background-color: #6A9AB0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: scale(1.08); /* hover impact */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tool-card h3 {
+    color: #33372C;
+}
+
+footer {
+    background-color: #3A6D8C;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #ffffea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001F3F; /* Light background color */
+}
+
+header {
+    background-color: #3A6D8C; /* Header background color */
+    color: #001F3F;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #001F3F;
+    text-decoration: none;
+}
+
+.signup-container {
+    max-width: 500px; /* Set a max width */
+    margin: 50px auto; /* Center the container */
+    padding: 20px; /* Inner padding */
+    background-color: #3A6D8C; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.signup-container h2 {
+    text-align: center; /* Center the heading */
+    color: #001F3F; /* Header text color */
+}
+
+.signup-container label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space below labels */
+}
+/* Main styles for the signup form container */
+.signup-container {
+    width: 500px; /* Increase width of the container */
+    margin: 50px auto; /* Center the container horizontally */
+    padding: 30px; /* Add more padding inside the container */
+    background-color: white; /* Keep the background white */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+}
+
+/* Adjust the input fields inside the signup container */
+.signup-container input {
+    width: calc(100% - 20px); /* Ensure the inputs fit well inside the container */
+    padding: 10px; /* Inner padding */
+    margin-bottom: 20px; /* Space below inputs */
+    border: 1px solid #3A6D8C; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+
+.signup-container input:focus {
+    border-color: #001F3F; /* Border color on focus */
+    outline: none; /* Remove outline */
+}
+
+.signup-container button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Inner padding */
+    background-color: #001F3F; /* Button background color */
+    color: white ; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.signup-container button:hover {
+    background-color: #3A6D8C; /* Darker shade on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3A6D8C; /* Footer background color */
+    color: white; /* Footer text color */
+    position: relative; /* Positioning */
+    bottom: 0;
+    width: 100%;
+}
+/* General styling for header */
+header {
+    background-color: #001F3F;
+    padding: 15px;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #3A6D8C;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #0c4b78;
+    transform: scale(1.1);
+  }
+  
+  header nav ul li a:active {
+    background-color: #002f4f;
+    transform: scale(1.05);
+  }
+  
+  /* Styling AI Tools Containers */
+.ai-tool-container {
+    background-color: #ffffff;
+    border: 2px solid #3A6D8C;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .ai-tool-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Welcome Page Animations */
+  #welcome-text {
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+    transition: transform 0.5s ease;
+  }
+  
+  #welcome-text:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Styling for Explore Tools Button */
+  .explore-tools-btn {
+    background-color: #0c4b78;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+  }
+  
+  .explore-tools-btn:hover {
+    background-color: #001F3F;
+    transform: scale(1.1);
+  }
+
+  /* Neon Glow Cursor */
+body {
+  cursor: none; /* Hide the default cursor */
+}
+
+.custom-cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 255, 255, 0.8); /* Neon blue */
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8),
+              0 0 20px rgba(0, 255, 255, 0.5),
+              0 0 30px rgba(0, 255, 255, 0.3);
+  pointer-events: none; /* Allow interaction through the cursor */
+  transition: transform 0.1s ease;
+}
+
+/* Cursor Hover Effect */
+a:hover ~ .custom-cursor,
+button:hover ~ .custom-cursor {
+  transform: scale(1.5); /* Enlarge on hover */
+  background-color: rgba(0, 255, 0, 0.8); /* Change color on hover */
+}
+
+

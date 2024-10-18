@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexAI - AI Tools</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS file -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p><img src="logo.jpg" alt="Logo" class="circular-logo" /></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Categories</h2>
+            <ul id="categories-list">
+                <!-- Categories will be dynamically populated -->
+            </ul>
+        </aside>
+
+        <section>
+            <h2>Popular</h2>
+            <div id="tool-container" class="tool-grid">
+                <!-- AI Tools will be dynamically populated here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NexAI. All rights reserved.</p>
+        <button id="signUpBtn">Sign Up for Free</button>
+    </footer>
+    
+    <script>
+        // Redirect to the form page when the button is clicked
+        document.getElementById('signUpBtn').addEventListener('click', () => {
+            window.location.href = 'signup.html'; // This should lead to the signup form page
+        });
+    </script>
+    
+    <script src="script.js"></script> <!-- External JS file -->
+</body>
+</html>

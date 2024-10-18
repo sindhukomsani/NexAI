@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to NexAI</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p><img src="logo.jpg" alt="Logo" class="circular-logo" /></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-btn">Home</a></li>
+                <li><a href="tools.html" class="nav-btn">Tools</a></li>
+                <li><a href="signup.html" class="nav-btn">Sign Up</a></li>
+              </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h2>WELCOME TO NEXAI</h2> <!-- Welcome message -->
+            <p>"Explore the future of AI at your fingertips!"</p> <!-- Quote -->
+            <button id="exploreBtn">Explore Tools</button> <!-- Button to explore tools -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NexAI. All rights reserved.</p> <!-- Footer text -->
+    </footer>
+
+    <script>
+    // Redirect to tools page when the Explore button is clicked
+    document.getElementById('exploreBtn').addEventListener('click', () => {
+        window.location.href = 'tools.html'; // Redirect to tools page
+    });
+    </script>
+</body>
+</html>
